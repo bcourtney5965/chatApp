@@ -5,7 +5,7 @@
   <title>Document</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.min.js"></script>
-  <script type="text/javascript" src="./scripts/app.js"></script>
+  <!-- <script type="text/javascript" src="./scripts/app.js"></script> -->
 </head>
 <body ng-app="myApp" ng-controller="myCtrl">
 
@@ -14,6 +14,19 @@
 <div ng-app="myApp" ng-controller="myCtrl">
     {{ firstName + " " + lastName }}
 </div>
+
+<script type="text/javascript">
+
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+});  
+
+</script>
+
+
+<!-- <div ng-view -->
   
 </body>
 </html>
